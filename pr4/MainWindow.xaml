@@ -1,0 +1,41 @@
+﻿<Window x:Class="pr4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Введите пару чисел (a, b)" FontSize="18" Margin="10"/>
+            <TextBlock Text="Введите число а" FontSize="18" Margin="10" />
+            <TextBox x:Name="TxtA" Margin="10,0,10,10" FontSize="18"/>
+            <TextBlock Text="Введите число b" FontSize="18" Margin="10" />
+            <TextBox x:Name="TxtB" Margin="10,0,10,10" FontSize="18"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="Введите пару чисел (c, d)" FontSize="18" Margin="10"/>
+            <TextBlock Text="Введите число c" FontSize="18" Margin="10" />
+            <TextBox x:Name="TxtC" Margin="10,0,10,10" FontSize="18"/>
+            <TextBlock Text="Введите число d" FontSize="18" Margin="10" />
+            <TextBox x:Name="TxtD" Margin="10,0,10,10" FontSize="18"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <Button x:Name="About" Content="О программе" Click="About_Click" HorizontalAlignment="Center" Height="50" Width="200" Margin="10"/>
+            <Button x:Name="Exit" Content="Выход" Click="Exit_Click" HorizontalAlignment="Center" Height="50" Width="200" Margin="10"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <TextBox x:Name="TxtOutput" Margin="10" Height="110"  IsReadOnly="True" />
+            <Button x:Name="Rez" Content="Результат" Click="Rez_Click" HorizontalAlignment="Center" Height="40" Width="300" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
