@@ -30,7 +30,7 @@ namespace pr4
                 int c = int.Parse(TxtC.Text);
                 int d = int.Parse(TxtD.Text);
                 
-                // Проверяем на четность ююю
+                // Проверяем на четность 333
                 if (a % 2 != 0 || b % 2 != 0 || c % 2 != 0 || d % 2 != 0)
                 {
                     MessageBox.Show("Все числа должны быть четными!");
